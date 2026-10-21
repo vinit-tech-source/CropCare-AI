@@ -1,0 +1,609 @@
+{
+  "_title": "KrishiMitra — Disease-to-Fertilizer Prescriptions Knowledge Base",
+  "_description": "Comprehensive agronomic mapping linking plant diseases to specific fertilizer prescriptions, nutrient adjustments, and organic soil amendments for Indian agriculture. Based on ICAR, TNAU, PAU, and IARI extension guidelines.",
+  "_primary_sources": [
+    "https://icar.org.in/ (Indian Council of Agricultural Research)",
+    "https://agritech.tnau.ac.in/ (Tamil Nadu Agricultural University Agritech Portal)",
+    "https://www.pau.edu/ (Punjab Agricultural University Package of Practices)",
+    "https://vikaspedia.in/agriculture/crop-production/integrated-pest-management",
+    "https://soilhealth.dac.gov.in/ (Department of Agriculture & Farmers Welfare, Govt of India)"
+  ],
+  "prescriptions": {
+    "Apple___Apple_scab": {
+      "crop": "Apple",
+      "disease_name": "Apple Scab",
+      "pathogen": "Venturia inaequalis (fungus)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "NPK 10:26:26 (Complex) or Muriate of Potash (MOP / SOP)",
+        "action_on_nitrogen": "Strictly reduce nitrogen by 25-30%. Avoid late spring urea top-dressing.",
+        "action_on_potassium": "Increase potassium by 20%. Apply Potassium Sulphate (SOP 0:0:50).",
+        "action_on_phosphorus": "Maintain basal Single Super Phosphate (SSP) for root vigor.",
+        "foliar_micronutrients": [
+          "Calcium Chloride (CaCl₂) @ 0.5% (5 g/L) to strengthen cuticle and fruit epidermis",
+          "Zinc Sulphate (heptahydrate 21%) @ 0.5% (5 g/L) + unslaked lime (0.25%) pre-bloom"
+        ],
+        "organic_bio_amendments": [
+          "Urea foliar spray @ 5% immediately before leaf fall in autumn to accelerate decomposition of scab-bearing fallen leaves",
+          "Apply well-decomposed Farm Yard Manure (FYM) @ 25-30 kg per tree",
+          "Neem cake @ 2-3 kg per tree around the basin"
+        ],
+        "fertilizers_to_avoid": [
+          "Excess Urea / Ammonium Nitrate (causes excessive succulent vegetative growth highly susceptible to scab ascospores)",
+          "Over-irrigation combined with nitrogenous top-dressing"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "NPK 10:26:26 @ 500 g per bearing tree in December-January during dormancy",
+        "foliar_spray": "Calcium chloride @ 5 g/L applied 4 times from petal fall at 14-day intervals",
+        "autumn_sanitation": "5% Urea foliar spray onto foliage right before leaf drop to starve overwintering pseudothecia"
+      },
+      "scientific_rationale": "Excessive nitrogen softens cuticle and epidermal cell walls, facilitating penetration by Venturia inaequalis appressoria. Potassium and calcium enhance lignin deposition and cell wall pectin density, restricting fungal hyphal advancement.",
+      "extension_reference": "ICAR-CITH (Central Institute of Temperate Horticulture, Srinagar) & Dr YS Parmar UHF Solan Apple Advisory."
+    },
+    "Apple___Black_rot": {
+      "crop": "Apple",
+      "disease_name": "Black Rot (Frogeye Leaf Spot)",
+      "pathogen": "Botryosphaeria obtusa (fungus)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "Potassium Sulphate (SOP) + Single Super Phosphate (SSP)",
+        "action_on_nitrogen": "Moderate nitrogen. Apply only in split doses in early spring.",
+        "action_on_potassium": "Increase potassium by 15-20% to prevent stress-induced fruit decay.",
+        "action_on_phosphorus": "Standard basal application.",
+        "foliar_micronutrients": [
+          "Calcium Nitrate @ 0.5% (5 g/L) at fruit development stages",
+          "Boric acid @ 0.1% (1 g/L) during pink bud to enhance fruit firmness"
+        ],
+        "organic_bio_amendments": [
+          "Trichoderma harzianum @ 50 g/tree mixed in 10 kg FYM applied around tree canopy",
+          "Neem cake @ 2.5 kg/tree"
+        ],
+        "fertilizers_to_avoid": [
+          "Heavy late-season nitrogen (promotes tender shoot blights and canker susceptibility)"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "MOP @ 400 g + SSP @ 700 g per mature tree",
+        "foliar_spray": "Calcium Nitrate @ 5 g/L sprayed post-bloom to harden fruit skin against rotting"
+      },
+      "scientific_rationale": "Adequate calcium prevents fruit softening and calyx-end leakage where Botryosphaeria rot enters. Potassium accelerates wound healing following pruning.",
+      "extension_reference": "SKUAST-Kashmir & Dr YS Parmar UHF Apple Disease Management Schedule."
+    },
+    "Apple___Cedar_apple_rust": {
+      "crop": "Apple",
+      "disease_name": "Cedar Apple Rust",
+      "pathogen": "Gymnosporangium juniperi-virginianae (fungus)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "Balanced NPK (12:32:16 or 10:26:26)",
+        "action_on_nitrogen": "Keep nitrogen balanced to low. Never apply excess top-dressing during rust sporulation periods (spring).",
+        "action_on_potassium": "Elevate potassium to strengthen leaf structure against rust haustoria.",
+        "action_on_phosphorus": "Standard application.",
+        "foliar_micronutrients": [
+          "Mono Potassium Phosphate (MKP 0:52:34) @ 0.5% (5 g/L) as resistance inducer",
+          "Zinc Sulphate @ 0.3% + Lime @ 0.15%"
+        ],
+        "organic_bio_amendments": [
+          "FYM enriched with Pseudomonas fluorescens @ 50 g/tree"
+        ],
+        "fertilizers_to_avoid": [
+          "Fast-release urea during damp spring months"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "10:26:26 @ 500 g per tree in late winter",
+        "foliar_spray": "MKP (0:52:34) @ 5 g/L at early leaf emergence"
+      },
+      "scientific_rationale": "High foliar phosphate and potassium (0:52:34) trigger systemic acquired resistance (SAR) against rust fungi and thicken cuticle layers.",
+      "extension_reference": "ICAR-CITH Temperate Fruit Pathology Guidelines."
+    },
+    "Apple___healthy": {
+      "crop": "Apple",
+      "disease_name": "Healthy Apple Leaf",
+      "pathogen": "None (Healthy)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "Balanced NPK (Urea, SSP, MOP or 12:32:16)",
+        "action_on_nitrogen": "Standard recommendation: 700 g Urea per mature tree (split into pre-bloom and post-fruit set).",
+        "action_on_potassium": "Standard recommendation: 700 g MOP per mature tree.",
+        "action_on_phosphorus": "Standard recommendation: 1000 g SSP per mature tree.",
+        "foliar_micronutrients": [
+          "Solubor (Boron 20%) @ 1 g/L at pink bud stage",
+          "Zinc Sulphate @ 5 g/L + hydrated lime @ 2.5 g/L after harvest"
+        ],
+        "organic_bio_amendments": [
+          "FYM @ 30-40 kg per mature tree annually during winter dormancy"
+        ],
+        "fertilizers_to_avoid": [
+          "Applying fertilizers directly against trunk"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "Full FYM, full SSP, and 50% MOP in December; 50% N at green tip; remaining N and K after fruit set."
+      },
+      "scientific_rationale": "Maintains balanced vegetative and reproductive growth, annual bearing, and high fruit color and shelf-life.",
+      "extension_reference": "TNAU Horticulture Dept & ICAR Package of Practices for Temperate Fruits."
+    },
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+      "crop": "Corn (Maize)",
+      "disease_name": "Gray Leaf Spot (Cercospora zeae-maydis)",
+      "pathogen": "Cercospora zeae-maydis (fungus)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "NPK 10:26:26 or 20:20:0:13 + MOP",
+        "action_on_nitrogen": "Split nitrogen into 3 distinct doses; avoid heavy basal urea that causes dense canopy.",
+        "action_on_potassium": "Increase potassium dose by 25 kg/ha (MOP @ 40 kg/acre). Potassium reduces Cercospora lesion expansion.",
+        "action_on_phosphorus": "Standard basal DAP or SSP.",
+        "foliar_micronutrients": [
+          "Zinc Sulphate (ZnSO₄ 21%) @ 10 kg/acre soil application or 0.5% foliar spray with lime",
+          "Foliar spray of 1% Potassium Nitrate (13:0:45) at knee-high stage"
+        ],
+        "organic_bio_amendments": [
+          "Trichoderma viride @ 2.5 kg/ha mixed with 250 kg FYM applied basally",
+          "Deep ploughing with crop residue incorporation using decomposer"
+        ],
+        "fertilizers_to_avoid": [
+          "Single heavy dose of urea; unamended soils low in potassium"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "1/3rd N (Urea 35 kg/acre) + full P (DAP 50 kg/acre) + full K (MOP 30 kg/acre) + ZnSO₄ 10 kg/acre",
+        "top_dress": "1/3rd N at knee-high (30-35 DAS) and 1/3rd N at tasseling stage (55-60 DAS)"
+      },
+      "scientific_rationale": "Potassium deficiency dramatically increases maize susceptibility to Cercospora by disrupting stomatal conductance and protein synthesis.",
+      "extension_reference": "ICAR-Indian Institute of Maize Research (IIMR), Ludhiana & PAU Maize Advisory."
+    },
+    "Corn_(maize)___Common_rust_": {
+      "crop": "Corn (Maize)",
+      "disease_name": "Common Rust",
+      "pathogen": "Puccinia sorghi (fungus)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "Balanced NPK with boosted Potash (MOP)",
+        "action_on_nitrogen": "Do not over-apply nitrogen. Excess N prolongs susceptibility to urediniospores.",
+        "action_on_potassium": "Top-dress with MOP @ 15 kg/acre at 30 days to build epidermal resistance.",
+        "action_on_phosphorus": "Standard DAP/SSP at sowing.",
+        "foliar_micronutrients": [
+          "Foliar spray of water-soluble 0:52:34 (MKP) @ 5 g/L to check rust pustule eruption",
+          "Zinc Sulphate @ 0.5% spray at 40 DAS"
+        ],
+        "organic_bio_amendments": [
+          "FYM @ 5 tonnes/acre at land preparation",
+          "Seed treatment with Azospirillum @ 200 g/acre"
+        ],
+        "fertilizers_to_avoid": [
+          "Top-dressing urea during continuous damp/foggy weather"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "DAP 50 kg/acre + MOP 25 kg/acre + Neem-Coated Urea 30 kg/acre",
+        "curative_foliar": "Spray 0:52:34 @ 1 kg/acre in 200 L water at first appearance of rust pustules"
+      },
+      "scientific_rationale": "High N:K ratio encourages intercellular spaces in mesophyll tissue where rust mycelium proliferates. High K hardens cell membranes.",
+      "extension_reference": "ICAR-IIMR & TNAU Agritech Portal — Millets/Maize Pathology."
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+      "crop": "Corn (Maize)",
+      "disease_name": "Northern Leaf Blight (Turcicum Leaf Blight)",
+      "pathogen": "Exserohilum turcicum (fungus)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "NPK 12:32:16 + Potash (MOP)",
+        "action_on_nitrogen": "Reduce nitrogen by 20% if infection appears before tasseling; apply strictly in splits.",
+        "action_on_potassium": "Increase potassium by 25%. Adequate K directly suppresses Exserohilum blight severity.",
+        "action_on_phosphorus": "Ensure full basal dose of SSP or DAP; phosphorus promotes root strength and rapid emergence.",
+        "foliar_micronutrients": [
+          "Zinc Sulphate (21%) @ 5 g/L foliar spray at knee-high stage",
+          "Potassium Nitrate (Multi-K 13:0:45) @ 10 g/L spray to restore photosynthetic capacity"
+        ],
+        "organic_bio_amendments": [
+          "Seed treatment with Trichoderma harzianum @ 10 g/kg seed",
+          "Neem cake @ 100 kg/acre"
+        ],
+        "fertilizers_to_avoid": [
+          "Excessive nitrogenous top-dressing; broadcast application of unamended urea on moist foliage"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "DAP 45 kg/acre + MOP 30 kg/acre + Urea 25 kg/acre",
+        "top_dress": "Urea 25 kg/acre at 30 DAS; foliar spray of 13:0:45 @ 1 kg/acre in 150 L water at 45 DAS"
+      },
+      "scientific_rationale": "Turcicum blight forms extensive cigar-shaped lesions that destroy photosynthetic area. Potassium accelerates stomatal control and cell wall lignification, restricting lesion coalescence.",
+      "extension_reference": "ICAR-IIMR Kharif Maize Disease Management."
+    },
+    "Corn_(maize)___healthy": {
+      "crop": "Corn (Maize)",
+      "disease_name": "Healthy Corn Leaf",
+      "pathogen": "None (Healthy)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "Urea + DAP + MOP (State recommended dose: 120:60:40 kg/ha NPK)",
+        "action_on_nitrogen": "Standard full split: 1/3 basal, 1/3 knee-high (30 DAS), 1/3 tasseling (55 DAS).",
+        "action_on_potassium": "Standard full basal dose.",
+        "action_on_phosphorus": "Standard full basal dose.",
+        "foliar_micronutrients": [
+          "Zinc Sulphate @ 10 kg/acre soil application (mandatory for Indian hybrid maize)",
+          "19:19:19 foliar spray @ 5 g/L at 40 DAS for hybrid vigour"
+        ],
+        "organic_bio_amendments": [
+          "FYM @ 4-5 tonnes/acre",
+          "Azotobacter / PSB seed treatment @ 250 g/acre each"
+        ],
+        "fertilizers_to_avoid": [
+          "Applying all nitrogen at once (causes leaching and volatilisation)"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "DAP 50 kg + MOP 30 kg + Urea 30 kg + ZnSO₄ 10 kg per acre",
+        "split_1": "Urea 40 kg/acre at knee-high stage",
+        "split_2": "Urea 30 kg/acre at tasseling / silking stage"
+      },
+      "scientific_rationale": "Optimal vegetative development, maximum cob filling, and high protein content in grain.",
+      "extension_reference": "TNAU Agritech Portal & PAU Package of Practices for Maize."
+    },
+    "Potato___Early_blight": {
+      "crop": "Potato",
+      "disease_name": "Early Blight",
+      "pathogen": "Alternaria solani (fungus)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "NPK 10:26:26 or 12:32:16 + Potassium Sulphate (SOP)",
+        "action_on_nitrogen": "Keep nitrogen balanced; do NOT starve plant of N as early blight preferentially attacks senescing older leaves under nitrogen deficiency.",
+        "action_on_potassium": "Increase potassium by 20%. Apply SOP (0:0:50) which improves tuber skin set and foliage immunity.",
+        "action_on_phosphorus": "Full basal dose via Single Super Phosphate (SSP provides 11% Sulphur).",
+        "foliar_micronutrients": [
+          "Mancozeb-compatible foliar spray of Potassium Nitrate (13:0:45) @ 10 g/L",
+          "Zinc Sulphate (21%) @ 2 g/L + Boron @ 1 g/L at tuber initiation"
+        ],
+        "organic_bio_amendments": [
+          "Neem cake @ 150 kg/acre at planting",
+          "Tuber treatment with Trichoderma viride @ 5 g/kg seed tuber"
+        ],
+        "fertilizers_to_avoid": [
+          "Imbalanced high-nitrogen without potash; using chloride-rich MOP in saline soils"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "SSP 150 kg/acre + SOP 50 kg/acre + Urea 40 kg/acre",
+        "top_dress": "Urea 35 kg/acre during earthing-up (30 DAS); foliar 13:0:45 @ 1 kg/acre at 45 and 60 DAS"
+      },
+      "scientific_rationale": "Alternaria is a necrotrophic pathogen that flourishes on prematurely aging tissues. Balanced nitrogen prevents premature senescence, while potassium strengthens outer parenchymal walls.",
+      "extension_reference": "ICAR-CPRI (Central Potato Research Institute, Shimla) Disease Advisory."
+    },
+    "Potato___Late_blight": {
+      "crop": "Potato",
+      "disease_name": "Late Blight",
+      "pathogen": "Phytophthora infestans (oomycete)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "Single Super Phosphate (SSP) + Potassium Sulphate (SOP)",
+        "action_on_nitrogen": "CRITICAL: Immediately stop or reduce nitrogen by 30-40%. Never apply urea top-dressing during cloudy, humid blight weather.",
+        "action_on_potassium": "Boost potassium by 25%. Potassium promotes phytoalexin production and cell wall lignification.",
+        "action_on_phosphorus": "Ensure robust phosphorus; phosphorus enhances phytohormone defense against oomycetes.",
+        "foliar_micronutrients": [
+          "Foliar spray of Potassium Phosphite (or 0:52:34 MKP) @ 3-5 g/L (induces SAR against Phytophthora)",
+          "Calcium Nitrate @ 5 g/L to strengthen tuber periderm against blight rot"
+        ],
+        "organic_bio_amendments": [
+          "Trichoderma harzianum @ 2.5 kg/acre in 100 kg FYM at planting",
+          "Avoid fresh animal manure during active growing season"
+        ],
+        "fertilizers_to_avoid": [
+          "Urea / Ammonium Sulphate top-dressing (destroys crop within 48h by creating succulent watery leaf tissue)",
+          "Over-irrigation immediately following fertilization"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "Full SSP 150 kg/acre + SOP 60 kg/acre + modest Urea 30 kg/acre",
+        "emergency_adjustment": "If blight detected: HALT urea immediately. Spray MKP (0:52:34) @ 5 g/L tank-mixed with systemic fungicide (Cymoxanil/Metalaxyl-Mancozeb)."
+      },
+      "scientific_rationale": "Excessive nitrogen elevates soluble amino acids and sugars in the apoplast, acting as a rapid food source for Phytophthora hyphae. High potassium enhances sub-epidermal thickness and suppresses sporangial germination.",
+      "extension_reference": "ICAR-CPRI Shimla Late Blight Decision Support System."
+    },
+    "Potato___healthy": {
+      "crop": "Potato",
+      "disease_name": "Healthy Potato Leaf",
+      "pathogen": "None (Healthy)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "Urea + DAP / SSP + MOP / SOP (Standard Indian recommendation: 150:100:120 kg/ha NPK)",
+        "action_on_nitrogen": "Split: 50% basal + 50% at earthing-up (30-35 DAS).",
+        "action_on_potassium": "Split: 50% basal + 50% at earthing-up (SOP preferred for high specific gravity chips).",
+        "action_on_phosphorus": "100% basal dose.",
+        "foliar_micronutrients": [
+          "19:19:19 @ 5 g/L at 40 DAS for vegetative growth",
+          "0:0:50 (Potassium Sulphate) @ 10 g/L at 65-70 DAS for tuber bulking"
+        ],
+        "organic_bio_amendments": [
+          "FYM @ 10-12 tonnes/acre",
+          "Azotobacter & Phosphobacteria @ 1 kg/acre each"
+        ],
+        "fertilizers_to_avoid": [
+          "Applying excessive nitrogen after 45 days (delays tuberization and promotes hollow heart)"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "DAP 75 kg + MOP 50 kg + Urea 40 kg per acre",
+        "top_dress": "Urea 40 kg + MOP 30 kg per acre during earthing-up"
+      },
+      "scientific_rationale": "High K ensures starch translocation from leaves into tubers, high dry-matter content, and superior storage quality.",
+      "extension_reference": "ICAR-CPRI & TNAU Agritech Portal — Potato Production Guidelines."
+    },
+    "Tomato___Bacterial_spot": {
+      "crop": "Tomato",
+      "disease_name": "Bacterial Spot",
+      "pathogen": "Xanthomonas perforans / euvesicatoria (bacteria)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "NPK 10:26:26 + Calcium Nitrate",
+        "action_on_nitrogen": "Reduce nitrogen by 25%. Avoid ammonium-based fertilizers (use nitrate forms).",
+        "action_on_potassium": "Maintain high potassium levels to support cell wall pectin cross-linking.",
+        "action_on_phosphorus": "Standard basal application.",
+        "foliar_micronutrients": [
+          "Calcium Nitrate @ 5 g/L foliar spray (calcium pectate protects intercellular spaces against bacterial pectolytic enzymes)",
+          "Copper Oxychloride (50% WP) @ 2.5 g/L + Streptocycline @ 0.1 g/L bactericidal spray",
+          "Borax @ 1 g/L to assist calcium translocation"
+        ],
+        "organic_bio_amendments": [
+          "Seedling dip in Pseudomonas fluorescens @ 10 g/L for 30 minutes before transplanting",
+          "Neem cake @ 100 kg/acre in planting furrow"
+        ],
+        "fertilizers_to_avoid": [
+          "High urea top-dressing (creates thin, hydathode-leaking leaves where Xanthomonas enters)",
+          "Overhead sprinkler irrigation that splashes bacteria"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "10:26:26 @ 75 kg/acre + FYM @ 5 tonnes/acre",
+        "foliar": "Spray Calcium Nitrate @ 5 g/L every 10-12 days during flowering and fruit setting"
+      },
+      "scientific_rationale": "Bacterial pathogens enter via stomata and hydathodes. High nitrogen increases hydathode guttation droplets loaded with nutrients that feed bacterial colonies. Calcium builds rigid calcium pectate in the middle lamella.",
+      "extension_reference": "ICAR-IIHR (Indian Institute of Horticultural Research, Bengaluru) Tomato Advisory."
+    },
+    "Tomato___Early_blight": {
+      "crop": "Tomato",
+      "disease_name": "Early Blight",
+      "pathogen": "Alternaria solani (fungus)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "NPK 10:26:26 + Potassium Sulphate (SOP)",
+        "action_on_nitrogen": "Moderate nitrogen in frequent small fertigation splits. Do NOT allow plants to become nitrogen deficient, as Alternaria colonizes senescent lower foliage.",
+        "action_on_potassium": "Increase potassium by 20% (use SOP 0:0:50). Enhances leaf cuticle thickness.",
+        "action_on_phosphorus": "Maintain basal SSP.",
+        "foliar_micronutrients": [
+          "Foliar spray of Potassium Nitrate (13:0:45) @ 5 g/L alternating with fungicide cover sprays",
+          "Zinc Sulphate (21%) @ 2.5 g/L + Boron @ 1 g/L"
+        ],
+        "organic_bio_amendments": [
+          "Trichoderma harzianum @ 2 kg/acre mixed with 200 kg vermicompost applied at root zone",
+          "Neem cake @ 100 kg/acre"
+        ],
+        "fertilizers_to_avoid": [
+          "Sudden heavy urea bursts; allowing lower leaves to touch moist soil"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "DAP 50 kg + MOP 30 kg + Urea 25 kg per acre",
+        "fertigation_foliar": "13:0:45 @ 5 g/L foliar spray at 10-day intervals from first fruit setting"
+      },
+      "scientific_rationale": "Alternaria produces target-board necrotic lesions by secreting alternaric acid. Potassium enhances phenolic defense compound accumulation, restricting lesion size.",
+      "extension_reference": "ICAR-IIHR Bengaluru & TNAU Vegetable Crop Management."
+    },
+    "Tomato___Late_blight": {
+      "crop": "Tomato",
+      "disease_name": "Late Blight",
+      "pathogen": "Phytophthora infestans (oomycete)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "Single Super Phosphate (SSP) + Potassium Sulphate (SOP)",
+        "action_on_nitrogen": "URGENT: Cease all urea/nitrogen application immediately upon symptom detection.",
+        "action_on_potassium": "Increase potassium by 25-30% using Potassium Sulphate or Potassium Phosphite.",
+        "action_on_phosphorus": "Maintain high available phosphorus.",
+        "foliar_micronutrients": [
+          "Foliar spray of Potassium Phosphite (0:52:34 MKP) @ 4 g/L (triggers natural systemic acquired resistance)",
+          "Calcium Nitrate @ 4 g/L to protect green and ripening fruits from brown watery rot"
+        ],
+        "organic_bio_amendments": [
+          "Trichoderma viride root application @ 5 g/L drenching",
+          "Neem oil spray @ 3 mL/L as preventive barrier"
+        ],
+        "fertilizers_to_avoid": [
+          "Urea, Ammonium Sulphate, or high-N fertigation formulas (causes water-soaked lesions to spread through entire canopy within 24-48 hours)"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "SSP 100 kg + SOP 40 kg + Neem Cake 100 kg per acre",
+        "curative_protocol": "Stop nitrogen immediately. Spray MKP (0:52:34) @ 5 g/L along with protective fungicide (Mancozeb 2.5 g/L or Dimethomorph 1 g/L)."
+      },
+      "scientific_rationale": "High tissue nitrogen directly stimulates zoosporangia germination and rapid intercellular colonization. High potassium thickens epidermis and stimulates PR (pathogenesis-related) protein synthesis.",
+      "extension_reference": "ICAR-IIHR Tomato Disease Advisory & TNAU Late Blight Management."
+    },
+    "Tomato___Leaf_Mold": {
+      "crop": "Tomato",
+      "disease_name": "Leaf Mold",
+      "pathogen": "Passalora fulva (syn. Cladosporium fulvum, fungus)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "NPK 10:26:26 with reduced top-dressing",
+        "action_on_nitrogen": "Moderate nitrogen. Avoid excess vegetative density that traps humidity in polyhouse or field.",
+        "action_on_potassium": "Increase potassium by 15% (MOP/SOP).",
+        "action_on_phosphorus": "Standard basal.",
+        "foliar_micronutrients": [
+          "Foliar spray of 0:52:34 (MKP) @ 5 g/L (suppresses conidial sporulation on leaf underside)",
+          "Calcium Nitrate @ 3 g/L"
+        ],
+        "organic_bio_amendments": [
+          "Trichoderma harzianum foliar spray @ 5 g/L",
+          "Ensure ventilation and lower humidity in greenhouse/polyhouse"
+        ],
+        "fertilizers_to_avoid": [
+          "High nitrogen fertilizers that cause dense, unpruned leaf canopies"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "10:26:26 @ 60 kg/acre",
+        "foliar": "Spray 0:52:34 @ 5 g/L to lower surfaces of leaves every 12 days"
+      },
+      "scientific_rationale": "Leaf mold enters via abaxial stomata under high relative humidity (>85%). Moderate canopy growth ensures rapid air drying and stomatal closure.",
+      "extension_reference": "ICAR-IARI (Indian Agricultural Research Institute, New Delhi) Protected Cultivation Division."
+    },
+    "Tomato___Septoria_leaf_spot": {
+      "crop": "Tomato",
+      "disease_name": "Septoria Leaf Spot",
+      "pathogen": "Septoria lycopersici (fungus)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "NPK 12:32:16 + Potash (MOP)",
+        "action_on_nitrogen": "Keep nitrogen balanced; do not starve plants. Mulch soil surface to prevent rain-splash from soil-applied fertilizers.",
+        "action_on_potassium": "Boost potassium by 15-20% (use SOP or MOP).",
+        "action_on_phosphorus": "Standard basal.",
+        "foliar_micronutrients": [
+          "Foliar Potassium Nitrate (13:0:45) @ 5 g/L combined with copper or mancozeb sprays",
+          "Zinc Sulphate @ 2 g/L"
+        ],
+        "organic_bio_amendments": [
+          "Neem cake @ 100 kg/acre + silver-black plastic mulch or straw mulch",
+          "Soil drenching with Trichoderma viride @ 5 g/L"
+        ],
+        "fertilizers_to_avoid": [
+          "Broadcast un-incorporated fertilizers; overhead watering onto fertilized beds"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "DAP 50 kg + MOP 30 kg + Urea 25 kg per acre",
+        "foliar": "13:0:45 @ 5 g/L every 14 days during fruiting"
+      },
+      "scientific_rationale": "Septoria spores are splashed from soil onto lower leaves. Potassium hardens lower leaf cuticles, delaying spore establishment.",
+      "extension_reference": "TNAU Agritech Portal — Tomato IPM."
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+      "crop": "Tomato",
+      "disease_name": "Two-Spotted Spider Mite Damage",
+      "pathogen": "Tetranychus urticae (pest/arachnid)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "Balanced NPK + Potassium Silicate amendment",
+        "action_on_nitrogen": "CRITICAL: Drastically reduce nitrogen. High nitrogen causes high free amino acid levels in sap that trigger explosive spider mite reproduction.",
+        "action_on_potassium": "Increase potassium by 20%.",
+        "action_on_phosphorus": "Standard basal.",
+        "foliar_micronutrients": [
+          "Potassium Silicate (Soluble Silica) @ 2.5 mL/L foliar spray (deposits silicon in leaf epidermal cells, wearing down mite mouthparts)",
+          "Magnesium Sulphate (Epsom salt) @ 3 g/L to restore chlorophyll destroyed by mite stylets",
+          "Elemental Sulphur (Wettable Sulphur 80% WDG) @ 3 g/L (serves as both acaricide and essential secondary nutrient Sulphur)"
+        ],
+        "organic_bio_amendments": [
+          "Neem oil (Azadirachtin 10000 ppm) @ 2 mL/L foliar spray",
+          "Beauveria bassiana @ 5 g/L bio-acaricide"
+        ],
+        "fertilizers_to_avoid": [
+          "Urea / Ammonium Nitrate top-dressing (proven to multiply mite fecundity and egg-laying rate by up to 300%)"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "10:26:26 @ 60 kg/acre + Neem cake 150 kg/acre",
+        "curative_spray": "Wettable Sulphur @ 3 g/L + Potassium Silicate @ 2 mL/L sprayed on underside of leaves"
+      },
+      "scientific_rationale": "Spider mite stylets pierce epidermal cells. High foliar nitrogen makes sap rich in amino acids, accelerating mite reproduction. Silicon and potassium harden the cuticle, impeding stylet penetration.",
+      "extension_reference": "ICAR-National Bureau of Agricultural Insect Resources (NBAIR) & TNAU Acarology Advisory."
+    },
+    "Tomato___Target_Spot": {
+      "crop": "Tomato",
+      "disease_name": "Target Spot",
+      "pathogen": "Corynespora cassiicola (fungus)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "NPK 10:26:26 + Calcium Nitrate",
+        "action_on_nitrogen": "Moderate nitrogen. Avoid high vegetative shading.",
+        "action_on_potassium": "Increase potassium by 20% to fortify fruit and foliage against Corynespora pinprick lesions.",
+        "action_on_phosphorus": "Standard basal.",
+        "foliar_micronutrients": [
+          "Calcium Nitrate @ 5 g/L to prevent circular target spot lesions on green fruit",
+          "0:52:34 (MKP) @ 5 g/L at 14-day intervals"
+        ],
+        "organic_bio_amendments": [
+          "Trichoderma harzianum @ 5 g/L root zone drench",
+          "Neem cake @ 100 kg/acre"
+        ],
+        "fertilizers_to_avoid": [
+          "Excessive nitrogenous top-dressing; unpruned suckers creating moist microclimate"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "10:26:26 @ 75 kg/acre + SSP 50 kg/acre",
+        "foliar": "Calcium Nitrate @ 5 g/L + Boron @ 1 g/L every 12 days during fruit bulking"
+      },
+      "scientific_rationale": "Calcium pectate in fruit pericarp prevents Corynespora hyphal penetration and fruit dropping.",
+      "extension_reference": "ICAR-IIHR Bengaluru Target Spot Advisory."
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+      "crop": "Tomato",
+      "disease_name": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+      "pathogen": "Begomovirus (transmitted by Whitefly Bemisia tabaci)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "NPK 10:26:26 + Micronutrient Mixture (Grade 1/Grade 4)",
+        "action_on_nitrogen": "Maintain moderate nitrogen in small frequent splits. High nitrogen attracts whitefly vectors due to bright green tender flush.",
+        "action_on_potassium": "Increase potassium by 25% (use Potassium Nitrate 13:0:45). Potassium maintains vascular water tension in stunted virus-infected plants.",
+        "action_on_phosphorus": "Standard basal.",
+        "foliar_micronutrients": [
+          "Chelated Zinc (Zn-EDTA 12%) @ 1.5 g/L + Ferrous Sulphate @ 2 g/L (corrects viral-induced severe chlorosis and cupping)",
+          "Foliar spray of 13:0:45 @ 5 g/L every 10 days to sustain flower retention",
+          "Solubor (Boron 20%) @ 1 g/L to prevent flower drop"
+        ],
+        "organic_bio_amendments": [
+          "Neem oil @ 3 mL/L + Yellow sticky traps (20 per acre) to control whitefly vector",
+          "Soil application of Vermicompost @ 1 tonne/acre enriched with Pseudomonas fluorescens"
+        ],
+        "fertilizers_to_avoid": [
+          "Fresh urea flushes that stimulate succulent shoot flushes which whiteflies prefer for egg laying"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "10:26:26 @ 80 kg/acre + ZnSO₄ 10 kg/acre + Borax 5 kg/acre",
+        "foliar_booster": "Zn-EDTA @ 1.5 g/L + 13:0:45 @ 5 g/L + Neem oil @ 3 mL/L sprayed weekly"
+      },
+      "scientific_rationale": "While fertilizers cannot eradicate the virus from phloem, supplemental micronutrients (Zn, Fe, B) and potassium stimulate lateral branching, minimize vein chlorosis, and allow partial yield salvage.",
+      "extension_reference": "ICAR-IIHR & TNAU Vegetable Entomology/Virology Advisory for TYLCV."
+    },
+    "Tomato___Tomato_mosaic_virus": {
+      "crop": "Tomato",
+      "disease_name": "Tomato Mosaic Virus (ToMV)",
+      "pathogen": "Tobamovirus (mechanically transmitted)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "Balanced NPK (19:19:19 or 10:26:26)",
+        "action_on_nitrogen": "Keep nitrogen moderate. Do not over-fertilize with nitrogen.",
+        "action_on_potassium": "Boost potassium by 20% to reduce internal fruit browning ('blotchy ripening').",
+        "action_on_phosphorus": "Standard basal.",
+        "foliar_micronutrients": [
+          "Zinc Sulphate (21%) @ 2 g/L + Magnesium Sulphate @ 3 g/L to combat mosaic mottling",
+          "Potassium Sulphate (0:0:50) foliar spray @ 5 g/L at fruit development"
+        ],
+        "organic_bio_amendments": [
+          "Seed treatment with Trisodium phosphate (10% TSP) solution for 30 minutes before sowing",
+          "Milk spray (skimmed milk powder @ 10%) on workers hands and seedlings during transplanting to neutralize ToMV particles"
+        ],
+        "fertilizers_to_avoid": [
+          "Excessive nitrogen (induces severe distortion, 'shoestring' leaves, and hollow fruits)"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "10:26:26 @ 75 kg/acre + FYM 5 tonnes/acre",
+        "foliar": "Magnesium Sulphate @ 3 g/L + 13:0:45 @ 5 g/L every 15 days"
+      },
+      "scientific_rationale": "Tobamovirus impairs chloroplast function and sugar transport. Magnesium re-synthesizes chlorophyll; potassium prevents internal fruit vascular necrosis.",
+      "extension_reference": "ICAR-IARI Plant Virology Division & PAU Vegetable Guidelines."
+    },
+    "Tomato___healthy": {
+      "crop": "Tomato",
+      "disease_name": "Healthy Tomato Leaf",
+      "pathogen": "None (Healthy)",
+      "fertilizer_recommendation": {
+        "primary_soil_fertilizer": "Urea + DAP + MOP (State recommended dose: 120:80:100 kg/ha NPK)",
+        "action_on_nitrogen": "Split: 50% basal + 25% at 30 days + 25% at 45 days (flowering).",
+        "action_on_potassium": "Split: 50% basal + 50% at fruit set (crucial for red lycopene pigment and firm skin).",
+        "action_on_phosphorus": "100% basal dose.",
+        "foliar_micronutrients": [
+          "Foliar 19:19:19 @ 5 g/L at vegetative stage",
+          "Calcium Nitrate @ 5 g/L + Boron @ 1 g/L at fruit setting (prevents blossom end rot)",
+          "13:0:45 @ 5 g/L during fruit harvesting flushes"
+        ],
+        "organic_bio_amendments": [
+          "FYM @ 10 tonnes/acre",
+          "Azospirillum & Phosphobacteria @ 1 kg/acre each"
+        ],
+        "fertilizers_to_avoid": [
+          "Excessive nitrogen during flowering (causes flower drop and bushy growth)"
+        ]
+      },
+      "dosage_and_application": {
+        "basal": "DAP 50 kg + MOP 35 kg + Urea 30 kg per acre",
+        "top_dress_1": "Urea 25 kg/acre at 30 DAS",
+        "top_dress_2": "Urea 25 kg + MOP 30 kg/acre at fruit set (45 DAS)"
+      },
+      "scientific_rationale": "Balanced nutrition drives rapid canopy establishment, high fruit set, uniform fruit size, thick pericarp, and high Brix (sweetness/firmness).",
+      "extension_reference": "TNAU Agritech Portal & ICAR-IIHR Tomato Production Package."
+    }
+  }
+}

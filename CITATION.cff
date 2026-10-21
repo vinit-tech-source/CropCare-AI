@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "CropCare AI: Crop Disease Detection and Fertilizer Recommendation System"
+version: 1.0.0
+date-released: 2024-01-01
+url: "https://github.com/vinit-tech-source/CropCare-AI"
+repository-code: "https://github.com/vinit-tech-source/CropCare-AI"
+license: MIT
+authors:
+  - family-names: "[YOUR LAST NAME]"
+    given-names: "[YOUR FIRST NAME]"
+    affiliation: "[YOUR COLLEGE]"
+keywords:
+  - machine-learning
+  - plant-disease-detection
+  - fertilizer-recommendation
+  - agriculture
+  - scikit-learn
+  - computer-vision
+abstract: >-
+  A classical machine learning system for plant disease classification
+  from leaf images using hand-crafted features (color, texture, shape)
+  and fertilizer recommendation using soil/climate data. Supports
+  SVM, KNN, Logistic Regression, and Random Forest with Stratified
+  K-Fold Cross Validation. Built as a college mini project.

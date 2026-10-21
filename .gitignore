@@ -1,0 +1,78 @@
+# ===========================
+# CropCare AI .gitignore
+# ===========================
+
+# ----- Data (never commit raw/processed data or archives) -----
+*.zip
+*.tar*
+*.gz
+data/raw/
+data/subset/
+data/subset_test/
+data/processed/
+!data/raw/.gitkeep
+!data/subset/.gitkeep
+!data/subset_test/.gitkeep
+!data/processed/.gitkeep
+
+# ----- Model artifacts -----
+models/*.joblib
+models/*.pkl
+!models/.gitkeep
+
+# ----- Prediction outputs -----
+outputs/
+!outputs/.gitkeep
+
+# ----- Python -----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# ----- Virtual environments -----
+.venv/
+venv/
+env/
+ENV/
+
+# ----- Jupyter Notebooks -----
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# ----- IDE -----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# ----- OS -----
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ----- Testing / Coverage -----
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# ----- Ruff / Linting -----
+.ruff_cache/
+.mypy_cache/
+
+# ----- Misc -----
+*.log
+*.bak
+*.tmp

@@ -1,0 +1,112 @@
+# ===========================
+# CropCare AI — Configuration
+# ===========================
+
+# Random seed for reproducibility
+random_seed: 42
+
+# ----- Dataset -----
+dataset:
+  # Crops to include from PlantVillage
+  crops:
+    - Apple
+    - Corn
+    - Potato
+    - Tomato
+
+  # Maximum images per class for the training subset
+  max_images_per_class_train: 300
+
+  # Maximum images per class for the test subset
+  max_images_per_class_test: 100
+
+  # Paths (relative to project root)
+  raw_dir: "data/raw"
+  subset_dir: "data/subset"
+  subset_test_dir: "data/subset_test"
+  processed_dir: "data/processed"
+  features_file: "data/processed/features.csv"
+  split_manifest: "data/processed/split_manifest.json"
+  fertilizer_csv: "data/raw/fertilizer.csv"
+
+# ----- Preprocessing -----
+preprocessing:
+  image_size: 256  # Resize to image_size x image_size
+  blur_kernel: 5   # Gaussian blur kernel size
+
+# ----- Segmentation -----
+segmentation:
+  n_clusters: 3          # KMeans k
+  color_space: "lab"     # "lab" or "hsv"
+  max_elbow_k: 8         # Max k to test for elbow/silhouette analysis
+
+# ----- Feature Extraction -----
+features:
+  # Color features
+  hsv_bins: 8  # Bins per HSV channel for histograms
+
+  # Texture — GLCM
+  glcm_distances: [1, 3]
+  glcm_angles: [0, 0.7854, 1.5708, 2.3562]  # 0°, 45°, 90°, 135°
+  glcm_properties:
+    - contrast
+    - homogeneity
+    - energy
+    - correlation
+    - dissimilarity
+
+  # Texture — LBP
+  lbp_radius: 2
+  lbp_n_points: 16  # 8 * radius
+
+  # Parallelism
+  n_jobs: -1  # Use all CPU cores
+
+# ----- Training -----
+training:
+  test_size: 0.20            # Train/validation split ratio
+  cv_folds_tuning: 5         # StratifiedKFold for GridSearchCV
+  cv_folds_reporting: 10     # StratifiedKFold for final CV reporting
+
+  # GridSearchCV parameter grids
+  param_grids:
+    svm:
+      classifier__kernel: ["rbf", "linear"]
+      classifier__C: [0.1, 1, 10, 100]
+      classifier__gamma: ["scale", 0.01, 0.001]
+      classifier__class_weight: ["balanced"]
+
+    knn:
+      classifier__n_neighbors: [3, 5, 7, 9, 11, 13, 15]
+      classifier__weights: ["uniform", "distance"]
+      classifier__metric: ["euclidean", "manhattan"]
+
+    logistic_regression:
+      classifier__C: [0.01, 0.1, 1, 10, 100]
+      classifier__max_iter: [1000]
+      classifier__solver: ["lbfgs"]
+      classifier__multi_class: ["multinomial"]
+      classifier__class_weight: ["balanced"]
+
+    random_forest:
+      classifier__n_estimators: [100, 200, 300]
+      classifier__max_depth: [10, 20, 30, null]
+      classifier__min_samples_split: [2, 5]
+      classifier__class_weight: ["balanced"]
+
+  # PCA variance threshold
+  pca_variance: 0.95
+
+# ----- Prediction -----
+prediction:
+  confidence_threshold: 0.50  # Below this, warn user to retake photo
+  top_k: 3                    # Show top-k predictions
+
+# ----- Paths -----
+paths:
+  models_dir: "models"
+  reports_dir: "reports"
+  figures_dir: "reports/figures"
+  outputs_dir: "outputs"
+  knowledge_base_dir: "data/knowledge_base"
+  samples_dir: "samples"

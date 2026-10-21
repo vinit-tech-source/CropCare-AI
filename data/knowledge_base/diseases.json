@@ -1,0 +1,661 @@
+{
+  "_description": "CropCare AI — Disease Knowledge Base. All information sourced from agricultural university extension services and government agencies.",
+  "_sources": [
+    "https://extension.umn.edu/plant-diseases",
+    "https://plantpath.ifas.ufl.edu/",
+    "https://www.apsnet.org/edcenter/disandpath/Pages/default.aspx",
+    "https://extension.psu.edu/tree-fruit-diseases",
+    "https://vikaspedia.in/agriculture/crop-production/integrated-pest-management",
+    "https://icar.org.in/",
+    "https://www.eppo.int/",
+    "https://www.cabi.org/isc/"
+  ],
+  "diseases": {
+    "Apple___Apple_scab": {
+      "crop": "Apple",
+      "disease": "Apple Scab",
+      "pathogen": "Venturia inaequalis (fungus)",
+      "symptoms": [
+        "Olive-green to dark brown velvety lesions on leaves",
+        "Scabby, corky spots on fruit surface",
+        "Premature leaf drop in severe infections",
+        "Distorted or cracked fruit when infected early"
+      ],
+      "cause": "Fungal spores overwinter in fallen leaves and are released during spring rains. Infection is favoured by cool, wet weather (15–24°C with prolonged leaf wetness).",
+      "organic_treatment": [
+        "Apply sulphur-based fungicide sprays during early season",
+        "Use neem oil sprays (0.3%) during early infection stages",
+        "Apply Bordeaux mixture (1%) as a preventive foliar spray"
+      ],
+      "chemical_treatment": [
+        "Mancozeb 75% WP at 2.5 g/L at green tip and pink bud stages",
+        "Myclobutanil (Systhane) at 0.5 mL/L at petal fall",
+        "Captan 50% WP at 2 g/L as a cover spray every 10–14 days"
+      ],
+      "prevention": [
+        "Remove and destroy fallen leaves in autumn to reduce inoculum",
+        "Prune trees to improve air circulation",
+        "Plant scab-resistant cultivars (e.g., Liberty, Enterprise, Goldrush)",
+        "Avoid overhead irrigation"
+      ],
+      "nutrient_notes": "Balanced fertilisation; excess nitrogen promotes succulent growth susceptible to infection.",
+      "source_urls": [
+        "https://extension.umn.edu/plant-diseases/apple-scab",
+        "https://extension.psu.edu/apple-diseases-apple-scab"
+      ]
+    },
+    "Apple___Black_rot": {
+      "crop": "Apple",
+      "disease": "Black Rot",
+      "pathogen": "Botryosphaeria obtusa (fungus)",
+      "symptoms": [
+        "Frogeye leaf spots: tan centres with purple margins",
+        "Firm, dark-brown to black rot expanding from the calyx end of fruit",
+        "Cankers on branches with reddish-brown sunken bark"
+      ],
+      "cause": "Fungal spores spread from mummified fruit and cankers during warm, wet weather (20–30°C). Infection occurs through wounds and natural openings.",
+      "organic_treatment": [
+        "Prune out all cankered branches and remove mummified fruit",
+        "Apply copper-based fungicides (Bordeaux mixture 1%) before bud break",
+        "Neem oil sprays at 0.3% concentration during growing season"
+      ],
+      "chemical_treatment": [
+        "Captan 50% WP at 2 g/L during early season sprays",
+        "Thiophanate-methyl (Topsin-M) at 1 g/L for canker treatment",
+        "Mancozeb 75% WP at 2.5 g/L as protective cover spray"
+      ],
+      "prevention": [
+        "Remove and destroy all mummified fruit and cankered wood",
+        "Maintain proper tree hygiene with regular pruning",
+        "Avoid wounding trees during cultivation",
+        "Harvest fruit promptly at maturity"
+      ],
+      "nutrient_notes": "Ensure adequate potassium to strengthen cell walls and improve disease resistance.",
+      "source_urls": [
+        "https://extension.psu.edu/apple-diseases-black-rot",
+        "https://extension.umn.edu/plant-diseases/black-rot-apple"
+      ]
+    },
+    "Apple___Cedar_apple_rust": {
+      "crop": "Apple",
+      "disease": "Cedar Apple Rust",
+      "pathogen": "Gymnosporangium juniperi-virginianae (fungus)",
+      "symptoms": [
+        "Bright yellow-orange spots on upper leaf surface",
+        "Small tube-like projections (aecia) on leaf undersides",
+        "Spots may have a red border and develop black pycnia",
+        "Fruit lesions with raised, orange pustules"
+      ],
+      "cause": "Requires two hosts (cedar/juniper and apple) to complete its life cycle. Spores from cedar galls are wind-dispersed to apple during wet spring weather.",
+      "organic_treatment": [
+        "Remove nearby cedar and juniper trees within 100 m if feasible",
+        "Apply sulphur-based sprays from pink bud through petal fall",
+        "Bordeaux mixture (1%) applied at green tip stage"
+      ],
+      "chemical_treatment": [
+        "Myclobutanil (Systhane) at 0.5 mL/L from pink bud to 2 weeks after petal fall",
+        "Mancozeb 75% WP at 2.5 g/L as protective spray",
+        "Propiconazole (Tilt) at 0.5 mL/L during high-risk periods"
+      ],
+      "prevention": [
+        "Plant rust-resistant apple cultivars (e.g., Liberty, Freedom, Redfree)",
+        "Remove cedar galls from nearby juniper/cedar hosts in winter",
+        "Maintain good air circulation through pruning",
+        "Monitor for early symptoms and act promptly"
+      ],
+      "nutrient_notes": "Adequate potassium and phosphorus promote plant defence mechanisms.",
+      "source_urls": [
+        "https://extension.psu.edu/apple-diseases-cedar-apple-rust",
+        "https://extension.umn.edu/plant-diseases/cedar-apple-rust"
+      ]
+    },
+    "Apple___healthy": {
+      "crop": "Apple",
+      "disease": "Healthy",
+      "pathogen": "N/A",
+      "symptoms": ["No disease symptoms. Leaves are uniformly green with no spots or lesions."],
+      "cause": "N/A — plant is healthy.",
+      "organic_treatment": ["No treatment needed. Continue with good agricultural practices."],
+      "chemical_treatment": ["No treatment needed."],
+      "prevention": [
+        "Maintain regular pruning and sanitation",
+        "Follow an integrated pest management (IPM) schedule",
+        "Ensure balanced nutrition and adequate irrigation"
+      ],
+      "nutrient_notes": "Continue balanced NPK fertilisation appropriate for the growth stage.",
+      "source_urls": [
+        "https://extension.psu.edu/tree-fruit-production-guide"
+      ]
+    },
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+      "crop": "Corn",
+      "disease": "Cercospora Leaf Spot / Gray Leaf Spot",
+      "pathogen": "Cercospora zeae-maydis (fungus)",
+      "symptoms": [
+        "Small, rectangular, grey to tan lesions running parallel to leaf veins",
+        "Lesions may coalesce, causing large areas of leaf blight",
+        "Lower leaves usually affected first",
+        "Severe infection reduces photosynthetic area significantly"
+      ],
+      "cause": "Fungal spores survive on infected corn residue. Warm (25–30°C), humid conditions with extended dew periods favour infection. Continuous corn and reduced tillage increase risk.",
+      "organic_treatment": [
+        "Crop rotation with non-host crops (legumes, cereals) for 1–2 years",
+        "Incorporate crop residue to accelerate decomposition",
+        "Apply Trichoderma-based biocontrol agents"
+      ],
+      "chemical_treatment": [
+        "Propiconazole (Tilt) at 0.5 mL/L applied at VT/R1 stage",
+        "Azoxystrobin (Amistar) at 0.5 mL/L at tasseling",
+        "Mancozeb 75% WP at 2.5 g/L for early-season protection"
+      ],
+      "prevention": [
+        "Plant resistant hybrids (check local university ratings)",
+        "Practice crop rotation to break the disease cycle",
+        "Tillage to bury infected residue",
+        "Avoid excessive plant density"
+      ],
+      "nutrient_notes": "Adequate potassium reduces susceptibility. Avoid excess nitrogen which promotes dense canopy and humidity.",
+      "source_urls": [
+        "https://extension.umn.edu/corn-pest-management/gray-leaf-spot",
+        "https://icar.org.in/"
+      ]
+    },
+    "Corn_(maize)___Common_rust_": {
+      "crop": "Corn",
+      "disease": "Common Rust",
+      "pathogen": "Puccinia sorghi (fungus)",
+      "symptoms": [
+        "Small, circular to elongated, cinnamon-brown pustules on both leaf surfaces",
+        "Pustules may be surrounded by a chlorotic halo",
+        "Heavily infected leaves turn yellow and die prematurely",
+        "Pustules break through the epidermis releasing powdery rust-coloured spores"
+      ],
+      "cause": "Urediniospores are wind-dispersed from southern regions. Cool to moderate temperatures (16–23°C) with high humidity favour infection. Dew is necessary for spore germination.",
+      "organic_treatment": [
+        "Plant resistant hybrids (most effective control method)",
+        "Remove volunteer corn plants that may harbour the pathogen",
+        "Apply neem oil (0.3%) during early infection"
+      ],
+      "chemical_treatment": [
+        "Propiconazole (Tilt) at 0.5 mL/L at first sign of pustules",
+        "Mancozeb 75% WP at 2.5 g/L applied pre-tassel if epidemic expected",
+        "Azoxystrobin + propiconazole combination at recommended rates"
+      ],
+      "prevention": [
+        "Use rust-resistant hybrids",
+        "Early planting to avoid peak spore arrival",
+        "Monitor fields regularly during cool, humid weather",
+        "Avoid excessive nitrogen fertilisation"
+      ],
+      "nutrient_notes": "Potassium deficiency increases susceptibility. Ensure balanced K nutrition.",
+      "source_urls": [
+        "https://extension.umn.edu/corn-pest-management/common-rust-corn",
+        "https://www.cabi.org/isc/datasheet/45790"
+      ]
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+      "crop": "Corn",
+      "disease": "Northern Leaf Blight",
+      "pathogen": "Exserohilum turcicum (syn. Helminthosporium turcicum) (fungus)",
+      "symptoms": [
+        "Long (2.5–15 cm), elliptical, greyish-green to tan lesions on leaves",
+        "Lesions may coalesce under severe conditions, blighting entire leaves",
+        "Lower leaves are typically affected first",
+        "Dark fungal sporulation visible on lesions during humid weather"
+      ],
+      "cause": "Spores survive on corn debris. Moderate temperatures (18–27°C) with heavy dew or rain promote infection. Continuous corn cropping and no-till increase inoculum.",
+      "organic_treatment": [
+        "Crop rotation with non-host crops for at least 1 year",
+        "Deep ploughing to bury infected residue",
+        "Apply Trichoderma harzianum biocontrol agent"
+      ],
+      "chemical_treatment": [
+        "Propiconazole at 0.5 mL/L at disease onset",
+        "Azoxystrobin (Amistar) at 0.5 mL/L during tasseling",
+        "Mancozeb 75% WP at 2.5 g/L as protective early-season spray"
+      ],
+      "prevention": [
+        "Plant resistant hybrids with Ht genes",
+        "Rotate crops and manage residue",
+        "Avoid late planting and excessive plant populations",
+        "Scout fields regularly from V8 onward"
+      ],
+      "nutrient_notes": "Balanced nitrogen and potassium. Excess N can increase canopy density and humidity, promoting disease.",
+      "source_urls": [
+        "https://extension.umn.edu/corn-pest-management/northern-corn-leaf-blight",
+        "https://vikaspedia.in/agriculture/crop-production/integrated-pest-management"
+      ]
+    },
+    "Corn_(maize)___healthy": {
+      "crop": "Corn",
+      "disease": "Healthy",
+      "pathogen": "N/A",
+      "symptoms": ["No disease symptoms. Leaves are uniformly green with no lesions."],
+      "cause": "N/A — plant is healthy.",
+      "organic_treatment": ["No treatment needed. Continue with good agricultural practices."],
+      "chemical_treatment": ["No treatment needed."],
+      "prevention": [
+        "Practice crop rotation",
+        "Use certified disease-free seed",
+        "Maintain balanced soil fertility",
+        "Monitor fields regularly"
+      ],
+      "nutrient_notes": "Continue recommended NPK programme for the growth stage.",
+      "source_urls": [
+        "https://extension.umn.edu/corn"
+      ]
+    },
+    "Potato___Early_blight": {
+      "crop": "Potato",
+      "disease": "Early Blight",
+      "pathogen": "Alternaria solani (fungus)",
+      "symptoms": [
+        "Dark brown to black concentric ring lesions ('target spots') on older leaves",
+        "Lesions often surrounded by a yellow halo",
+        "Lower leaves are affected first; progresses upward",
+        "Tubers may develop dark, sunken, circular lesions"
+      ],
+      "cause": "Fungus survives in soil and on plant debris. Warm temperatures (24–29°C), alternating wet and dry periods, and stressed or senescing plants favour infection.",
+      "organic_treatment": [
+        "Apply Bordeaux mixture (1%) every 7–10 days during favourable conditions",
+        "Neem oil sprays at 0.3% at early symptom appearance",
+        "Trichoderma viride soil application before planting"
+      ],
+      "chemical_treatment": [
+        "Mancozeb 75% WP at 2.5 g/L every 7–10 days",
+        "Chlorothalonil (Kavach) at 2 g/L as protective spray",
+        "Azoxystrobin (Amistar) at 0.5 mL/L for curative action"
+      ],
+      "prevention": [
+        "Use certified disease-free seed tubers",
+        "Practice 2–3 year crop rotation with non-solanaceous crops",
+        "Remove and destroy infected plant debris",
+        "Avoid overhead irrigation; use drip irrigation",
+        "Ensure adequate spacing for air circulation"
+      ],
+      "nutrient_notes": "Adequate nitrogen and potassium reduce susceptibility. Avoid nitrogen deficiency which accelerates leaf senescence.",
+      "source_urls": [
+        "https://extension.umn.edu/plant-diseases/early-blight-tomato-and-potato",
+        "https://vikaspedia.in/agriculture/crop-production/integrated-pest-management/ipm-for-vegetable-crops/ipm-strategies-for-potato"
+      ]
+    },
+    "Potato___Late_blight": {
+      "crop": "Potato",
+      "disease": "Late Blight",
+      "pathogen": "Phytophthora infestans (oomycete)",
+      "symptoms": [
+        "Water-soaked, pale-green to dark-brown lesions on leaf margins and tips",
+        "White, cottony sporulation on the underside of leaves in humid conditions",
+        "Rapid browning and death of entire leaves and stems",
+        "Brown, firm rot on tubers extending inward"
+      ],
+      "cause": "Oomycete pathogen favoured by cool (10–20°C), wet conditions with prolonged leaf wetness. Spores are wind-dispersed and can cause epidemics rapidly. Historically responsible for the Irish Potato Famine (1845).",
+      "organic_treatment": [
+        "Bordeaux mixture (1%) applied preventively every 5–7 days during wet weather",
+        "Copper hydroxide 77% WP at 2 g/L",
+        "Remove and destroy infected plants immediately"
+      ],
+      "chemical_treatment": [
+        "Metalaxyl + Mancozeb (Ridomil Gold MZ) at 2.5 g/L every 7–10 days",
+        "Cymoxanil + Mancozeb (Curzate M) at 3 g/L",
+        "Dimethomorph (Acrobat) at 1 g/L for resistant strains"
+      ],
+      "prevention": [
+        "Plant resistant cultivars (e.g., Kufri Jyoti, Kufri Girdhari in India)",
+        "Use certified disease-free seed tubers",
+        "Destroy volunteer potato plants and cull piles",
+        "Avoid irrigation during cool, cloudy periods",
+        "Hill up tubers to prevent tuber infection from surface spores"
+      ],
+      "nutrient_notes": "Avoid excess nitrogen which promotes lush, susceptible growth. Adequate potassium improves resistance. Phosphorus supports root health.",
+      "source_urls": [
+        "https://extension.umn.edu/plant-diseases/late-blight",
+        "https://vikaspedia.in/agriculture/crop-production/integrated-pest-management/ipm-for-vegetable-crops/ipm-strategies-for-potato"
+      ]
+    },
+    "Potato___healthy": {
+      "crop": "Potato",
+      "disease": "Healthy",
+      "pathogen": "N/A",
+      "symptoms": ["No disease symptoms. Leaves are uniformly green and turgid."],
+      "cause": "N/A — plant is healthy.",
+      "organic_treatment": ["No treatment needed."],
+      "chemical_treatment": ["No treatment needed."],
+      "prevention": [
+        "Use certified seed tubers",
+        "Practice crop rotation",
+        "Maintain proper soil moisture and fertility",
+        "Scout fields regularly"
+      ],
+      "nutrient_notes": "Follow recommended potato fertilisation schedule (typically 120-80-80 N-P-K kg/ha).",
+      "source_urls": [
+        "https://vikaspedia.in/agriculture/crop-production/package-of-practices/vegetables/potato"
+      ]
+    },
+    "Tomato___Bacterial_spot": {
+      "crop": "Tomato",
+      "disease": "Bacterial Spot",
+      "pathogen": "Xanthomonas vesicatoria (bacterium)",
+      "symptoms": [
+        "Small, water-soaked, dark spots on leaves, stems and fruit",
+        "Leaf spots may be angular with yellow halos",
+        "Spots on fruit are raised, scab-like with cracked centres",
+        "Severe infections cause defoliation"
+      ],
+      "cause": "Bacterium spreads via contaminated seed, splashing rain and overhead irrigation. Warm (24–30°C), humid conditions favour rapid spread.",
+      "organic_treatment": [
+        "Copper-based bactericides (copper hydroxide 77% WP at 2 g/L) every 7–10 days",
+        "Bordeaux mixture (1%) applied preventively",
+        "Remove and destroy severely infected plants"
+      ],
+      "chemical_treatment": [
+        "Copper hydroxide + mancozeb tank mix (2 + 2.5 g/L)",
+        "Streptocycline (streptomycin sulfate) at 100 ppm (where registered)",
+        "Kasugamycin at 0.2 mL/L as an alternative antibiotic"
+      ],
+      "prevention": [
+        "Use certified disease-free seed and transplants",
+        "Hot-water treat seed (50°C for 25 minutes)",
+        "Practice crop rotation (2–3 years) with non-solanaceous crops",
+        "Avoid overhead irrigation; use drip systems",
+        "Disinfect tools and stakes between uses"
+      ],
+      "nutrient_notes": "Avoid excess nitrogen which produces succulent tissues susceptible to infection. Calcium helps strengthen cell walls.",
+      "source_urls": [
+        "https://extension.umn.edu/plant-diseases/bacterial-spot-tomato-and-pepper",
+        "https://vikaspedia.in/agriculture/crop-production/integrated-pest-management/ipm-for-vegetable-crops/ipm-strategies-for-tomato"
+      ]
+    },
+    "Tomato___Early_blight": {
+      "crop": "Tomato",
+      "disease": "Early Blight",
+      "pathogen": "Alternaria solani (fungus)",
+      "symptoms": [
+        "Concentric ring ('target spot') lesions on lower leaves first",
+        "Lesions surrounded by yellow halos",
+        "Stem lesions appear as dark, sunken cankers at the soil line",
+        "Fruit may develop dark, leathery spots near the stem end"
+      ],
+      "cause": "Fungal spores survive in soil and plant debris. Warm temperatures (24–29°C) with alternating wet and dry conditions, and nutrient-stressed or ageing plants favour infection.",
+      "organic_treatment": [
+        "Bordeaux mixture (1%) every 7–10 days",
+        "Neem oil at 0.3% during early infection",
+        "Trichoderma viride applied to soil and as foliar spray"
+      ],
+      "chemical_treatment": [
+        "Mancozeb 75% WP at 2.5 g/L every 7–10 days",
+        "Chlorothalonil at 2 g/L as cover spray",
+        "Azoxystrobin at 0.5 mL/L for curative action"
+      ],
+      "prevention": [
+        "Mulch around plants to reduce soil splash",
+        "Remove lower leaves that contact the soil",
+        "Practice 2-year crop rotation with non-solanaceous crops",
+        "Stake or cage plants for better air circulation"
+      ],
+      "nutrient_notes": "Adequate potassium and nitrogen reduce susceptibility. Avoid nitrogen deficiency.",
+      "source_urls": [
+        "https://extension.umn.edu/plant-diseases/early-blight-tomato-and-potato"
+      ]
+    },
+    "Tomato___Late_blight": {
+      "crop": "Tomato",
+      "disease": "Late Blight",
+      "pathogen": "Phytophthora infestans (oomycete)",
+      "symptoms": [
+        "Large, irregular, water-soaked patches on leaves, often starting at leaf tips",
+        "White fungal growth visible on underside of leaves in humid conditions",
+        "Rapid browning and collapse of leaves and stems",
+        "Firm, greasy, brown rot on fruit"
+      ],
+      "cause": "Cool (10–20°C), wet conditions with prolonged leaf wetness. Spores are wind-dispersed over long distances. Spreads extremely rapidly under favourable conditions.",
+      "organic_treatment": [
+        "Bordeaux mixture (1%) every 5–7 days during wet weather",
+        "Copper hydroxide 77% WP at 2 g/L",
+        "Immediately remove and destroy infected plants"
+      ],
+      "chemical_treatment": [
+        "Metalaxyl + Mancozeb (Ridomil Gold MZ) at 2.5 g/L",
+        "Cymoxanil + Mancozeb at 3 g/L",
+        "Chlorothalonil at 2 g/L as protective spray"
+      ],
+      "prevention": [
+        "Plant resistant varieties where available",
+        "Avoid overhead irrigation",
+        "Ensure good air circulation (wider spacing, pruning)",
+        "Remove volunteer tomato and potato plants",
+        "Scout fields daily during cool, wet weather"
+      ],
+      "nutrient_notes": "Reduce nitrogen application. Adequate phosphorus and potassium improve resistance. Avoid waterlogging.",
+      "source_urls": [
+        "https://extension.umn.edu/plant-diseases/late-blight",
+        "https://vikaspedia.in/agriculture/crop-production/integrated-pest-management/ipm-for-vegetable-crops/ipm-strategies-for-tomato"
+      ]
+    },
+    "Tomato___Leaf_Mold": {
+      "crop": "Tomato",
+      "disease": "Leaf Mold",
+      "pathogen": "Passalora fulva (syn. Cladosporium fulvum) (fungus)",
+      "symptoms": [
+        "Pale greenish-yellow spots on upper leaf surface",
+        "Olive-green to brown velvety mold on lower leaf surface",
+        "Affected leaves may curl, wither, and drop",
+        "Most common in greenhouse and high-tunnel production"
+      ],
+      "cause": "High humidity (>85%) and moderate temperatures (22–24°C) favour infection. Poor air circulation in enclosed growing structures is a major risk factor.",
+      "organic_treatment": [
+        "Improve ventilation and reduce humidity in greenhouses",
+        "Bordeaux mixture (1%) at first sign of symptoms",
+        "Neem oil sprays at 0.3%"
+      ],
+      "chemical_treatment": [
+        "Chlorothalonil at 2 g/L every 7–10 days",
+        "Mancozeb 75% WP at 2.5 g/L",
+        "Azoxystrobin at 0.5 mL/L"
+      ],
+      "prevention": [
+        "Ensure adequate ventilation in greenhouses/tunnels",
+        "Space plants widely to promote air circulation",
+        "Avoid wetting foliage during irrigation",
+        "Use resistant cultivars carrying Cf resistance genes",
+        "Remove infected leaves promptly"
+      ],
+      "nutrient_notes": "Balanced nutrition; excess nitrogen increases foliage density and humidity retention.",
+      "source_urls": [
+        "https://extension.umn.edu/plant-diseases/tomato-leaf-mold"
+      ]
+    },
+    "Tomato___Septoria_leaf_spot": {
+      "crop": "Tomato",
+      "disease": "Septoria Leaf Spot",
+      "pathogen": "Septoria lycopersici (fungus)",
+      "symptoms": [
+        "Numerous small (2–3 mm), circular spots with dark margins and grey centres",
+        "Tiny black pycnidia (spore-producing bodies) visible in spot centres",
+        "Lower leaves affected first; severe infections cause extensive defoliation",
+        "Fruit is rarely directly affected but is susceptible to sunscald after defoliation"
+      ],
+      "cause": "Fungal spores survive on infected debris and solanaceous weeds. Warm (20–25°C) wet weather with splashing rain promotes spread.",
+      "organic_treatment": [
+        "Bordeaux mixture (1%) every 7 days during wet weather",
+        "Copper-based fungicides at first symptom appearance",
+        "Remove and destroy infected lower leaves"
+      ],
+      "chemical_treatment": [
+        "Chlorothalonil at 2 g/L every 7–10 days",
+        "Mancozeb 75% WP at 2.5 g/L",
+        "Azoxystrobin at 0.5 mL/L for systemic control"
+      ],
+      "prevention": [
+        "Mulch around plants to prevent soil splash",
+        "Practice crop rotation (2–3 years)",
+        "Remove solanaceous weeds",
+        "Stake plants and prune lower branches",
+        "Avoid overhead irrigation"
+      ],
+      "nutrient_notes": "Adequate potassium and calcium strengthen plant defences.",
+      "source_urls": [
+        "https://extension.umn.edu/plant-diseases/septoria-leaf-spot-tomato"
+      ]
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+      "crop": "Tomato",
+      "disease": "Spider Mites (Two-Spotted Spider Mite)",
+      "pathogen": "Tetranychus urticae (arachnid pest, not a pathogen)",
+      "symptoms": [
+        "Tiny yellow or white stippling on upper leaf surface",
+        "Fine silk webbing on leaf undersides and between leaves",
+        "Leaves become bronzed, dry and brittle",
+        "Severe infestations cause leaf drop and reduced yield"
+      ],
+      "cause": "Hot (>27°C), dry conditions favour mite population explosions. Dusty conditions and use of broad-spectrum insecticides that kill natural predators worsen infestations.",
+      "organic_treatment": [
+        "Spray with water jets to dislodge mites",
+        "Apply neem oil at 0.3% every 5–7 days",
+        "Release predatory mites (Phytoseiulus persimilis) as biological control",
+        "Apply insecticidal soap at 2% concentration"
+      ],
+      "chemical_treatment": [
+        "Abamectin (Vertimec) at 0.5 mL/L, targeting leaf undersides",
+        "Spiromesifen (Oberon) at 0.3 mL/L",
+        "Dicofol 18.5 EC at 2.5 mL/L (where registered)"
+      ],
+      "prevention": [
+        "Monitor plants regularly, especially during hot, dry weather",
+        "Maintain adequate irrigation to reduce plant stress",
+        "Avoid dusty field conditions by mulching or cover-cropping",
+        "Avoid broad-spectrum insecticides that kill mite predators",
+        "Interplant with companion crops that attract beneficial insects"
+      ],
+      "nutrient_notes": "Stressed, nitrogen-deficient plants are more susceptible. Maintain balanced nutrition.",
+      "source_urls": [
+        "https://extension.umn.edu/yard-and-garden-insects/twospotted-spider-mites",
+        "https://vikaspedia.in/agriculture/crop-production/integrated-pest-management"
+      ]
+    },
+    "Tomato___Target_Spot": {
+      "crop": "Tomato",
+      "disease": "Target Spot",
+      "pathogen": "Corynespora cassiicola (fungus)",
+      "symptoms": [
+        "Small, dark-brown circular spots with concentric rings (target pattern)",
+        "Spots enlarge and may develop a pale tan centre",
+        "Primarily affects lower and middle leaves",
+        "Severe infections cause extensive defoliation and fruit lesions"
+      ],
+      "cause": "Warm (20–32°C), humid conditions favour infection. The fungus persists in soil and plant debris. Dense canopy and poor air circulation increase risk.",
+      "organic_treatment": [
+        "Bordeaux mixture (1%) at first symptom appearance",
+        "Remove and destroy infected leaves",
+        "Trichoderma-based biocontrol agents applied to soil"
+      ],
+      "chemical_treatment": [
+        "Chlorothalonil at 2 g/L every 7 days",
+        "Azoxystrobin at 0.5 mL/L",
+        "Difenoconazole at 0.5 mL/L"
+      ],
+      "prevention": [
+        "Prune lower branches and maintain adequate plant spacing",
+        "Practice crop rotation with non-solanaceous crops",
+        "Mulch to reduce soil splash",
+        "Avoid overhead irrigation",
+        "Remove plant debris after harvest"
+      ],
+      "nutrient_notes": "Balanced fertilisation; excess nitrogen promotes dense canopy conducive to disease.",
+      "source_urls": [
+        "https://plantpath.ifas.ufl.edu/",
+        "https://www.cabi.org/isc/"
+      ]
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+      "crop": "Tomato",
+      "disease": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+      "pathogen": "Tomato yellow leaf curl virus (Begomovirus, family Geminiviridae)",
+      "symptoms": [
+        "Severe upward curling and cupping of leaves",
+        "Yellowing of leaf margins, especially on new growth",
+        "Stunted plant growth with shortened internodes",
+        "Flower drop and drastically reduced fruit set",
+        "Plants infected early may be completely unproductive"
+      ],
+      "cause": "Transmitted by the whitefly Bemisia tabaci (silverleaf whitefly). The virus is acquired and transmitted in a persistent, circulative manner. Hot seasons and high whitefly populations drive epidemics.",
+      "organic_treatment": [
+        "Install yellow sticky traps to monitor and reduce whitefly populations",
+        "Apply neem oil (0.3%) or neem seed kernel extract (5%) to repel whiteflies",
+        "Release Encarsia formosa parasitoid wasps for biological whitefly control",
+        "Remove and destroy infected plants immediately"
+      ],
+      "chemical_treatment": [
+        "Imidacloprid (Confidor) at 0.3 mL/L as soil drench or foliar spray for whitefly control",
+        "Thiamethoxam (Actara) at 0.25 g/L for whitefly control",
+        "No direct chemical cure for the virus; control is via vector management"
+      ],
+      "prevention": [
+        "Use TYLCV-resistant tomato varieties (e.g., carrying Ty-1, Ty-2, Ty-3 genes)",
+        "Use fine-mesh insect-proof netting in nurseries and greenhouses",
+        "Implement a whitefly-free period before transplanting",
+        "Remove weed hosts that harbour the virus or whiteflies",
+        "Avoid planting new tomato crops adjacent to older infected ones"
+      ],
+      "nutrient_notes": "Virus-infected plants have reduced nutrient uptake. Foliar micronutrient sprays (Zn, Fe, Mn) may help maintain vigour in mildly affected plants.",
+      "source_urls": [
+        "https://vikaspedia.in/agriculture/crop-production/integrated-pest-management/ipm-for-vegetable-crops/ipm-strategies-for-tomato",
+        "https://www.cabi.org/isc/datasheet/54872"
+      ]
+    },
+    "Tomato___Tomato_mosaic_virus": {
+      "crop": "Tomato",
+      "disease": "Tomato Mosaic Virus (ToMV)",
+      "pathogen": "Tomato mosaic virus (Tobamovirus)",
+      "symptoms": [
+        "Light and dark green mosaic mottling pattern on leaves",
+        "Leaf distortion, curling and fern-like appearance (shoestring leaves)",
+        "Stunted plant growth",
+        "Uneven ripening and brown (internal browning) on fruit",
+        "Reduced fruit yield"
+      ],
+      "cause": "Highly stable virus transmitted mechanically through contaminated hands, tools, clothing, and seed. Does NOT require an insect vector. Survives in plant debris and on surfaces for months to years.",
+      "organic_treatment": [
+        "No cure once infected. Remove and destroy infected plants.",
+        "Dip hands and tools in skimmed milk (10%) before handling plants (protein in milk inactivates the virus)",
+        "Cross-protection with mild strains (experimental, not widely recommended)"
+      ],
+      "chemical_treatment": [
+        "No chemical treatment available for viral infections",
+        "Prevention and sanitation are the only effective approaches"
+      ],
+      "prevention": [
+        "Use certified virus-free seed and transplants",
+        "Use resistant varieties carrying the Tm-2² resistance gene",
+        "Wash hands thoroughly with soap before handling plants",
+        "Disinfect tools with 10% bleach or trisodium phosphate solution",
+        "Do not smoke near tomato plants (tobacco mosaic virus cross-infection)",
+        "Remove and destroy infected plants and debris"
+      ],
+      "nutrient_notes": "Maintain balanced nutrition to support plant vigour. No specific nutrient adjustments for viral control.",
+      "source_urls": [
+        "https://extension.umn.edu/plant-diseases/tomato-viruses",
+        "https://vikaspedia.in/agriculture/crop-production/integrated-pest-management/ipm-for-vegetable-crops/ipm-strategies-for-tomato"
+      ]
+    },
+    "Tomato___healthy": {
+      "crop": "Tomato",
+      "disease": "Healthy",
+      "pathogen": "N/A",
+      "symptoms": ["No disease symptoms. Leaves are uniformly green and vigorous."],
+      "cause": "N/A — plant is healthy.",
+      "organic_treatment": ["No treatment needed."],
+      "chemical_treatment": ["No treatment needed."],
+      "prevention": [
+        "Continue integrated pest management (IPM) practices",
+        "Maintain balanced fertilisation",
+        "Scout fields regularly for early detection",
+        "Practice crop rotation"
+      ],
+      "nutrient_notes": "Follow recommended tomato fertilisation (typically 120-60-60 N-P₂O₅-K₂O kg/ha).",
+      "source_urls": [
+        "https://extension.umn.edu/vegetables/growing-tomatoes"
+      ]
+    }
+  }
+}
