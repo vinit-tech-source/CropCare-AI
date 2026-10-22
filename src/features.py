@@ -442,6 +442,7 @@ def extract_all_features(
     manifest_path: Path | str | None = None,
     output_csv: Path | str | None = None,
     n_jobs: int | None = None,
+    max_per_class: int | None = None,
 ) -> pd.DataFrame:
     """Extract features for all images in the dataset manifest and save to CSV.
 
@@ -453,6 +454,8 @@ def extract_all_features(
         Path to destination CSV. Defaults to config features_file.
     n_jobs : int | None
         Number of parallel worker processes. Defaults to config n_jobs.
+    max_per_class : int | None
+        Optional maximum records per class and split to process.
 
     Returns
     -------
@@ -488,6 +491,19 @@ def extract_all_features(
         manifest_data = json.load(fh)
 
     records = manifest_data.get("records", [])
+
+    if max_per_class is not None and max_per_class > 0:
+        filtered = []
+        counts: dict[str, int] = {}
+        for r in records:
+            cls = r.get("class_name", "")
+            splt = r.get("split", "train")
+            key = f"{cls}_{splt}"
+            if counts.get(key, 0) < max_per_class:
+                filtered.append(r)
+                counts[key] = counts.get(key, 0) + 1
+        records = filtered
+
     logger.info(
         "Starting feature extraction for %d images using %d workers...",
         len(records),

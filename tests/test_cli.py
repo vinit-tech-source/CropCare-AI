@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import pytest
+
 from src.cli import _build_parser
 
 
@@ -69,3 +71,20 @@ class TestCLIParser:
         parser = _build_parser()
         args = parser.parse_args(["-v", "train"])
         assert args.verbose is True
+
+
+class TestCLIDispatch:
+    """Tests for CLI main() dispatch logic."""
+
+    def test_main_list_classes(self) -> None:
+        from src.cli import main
+
+        # Should execute list_classes without raising
+        main(["list-classes"])
+
+    def test_main_no_args_exits(self) -> None:
+        from src.cli import main
+
+        with pytest.raises(SystemExit) as exc_info:
+            main([])
+        assert exc_info.value.code == 0
