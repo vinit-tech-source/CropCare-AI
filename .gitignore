@@ -18,6 +18,8 @@ data/processed/
 # ----- Model artifacts -----
 models/*.joblib
 models/*.pkl
+models/*.json
+!models/model_card.json
 !models/.gitkeep
 
 # ----- Prediction outputs -----
@@ -63,7 +65,7 @@ ehthumbs.db
 
 # ----- Testing / Coverage -----
 .pytest_cache/
-.coverage
+.coverage*
 htmlcov/
 .tox/
 .nox/

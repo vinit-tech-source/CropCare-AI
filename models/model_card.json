@@ -1,0 +1,62 @@
+{
+  "model_name": "CropCare AI Multi-Model Classical ML Suite",
+  "version": "1.0.0",
+  "task": "Crop Leaf Disease Detection & Soil-Aware Fertilizer Recommendation",
+  "architectures": [
+    "Support Vector Machine (RBF Kernel)",
+    "Random Forest Classifier",
+    "Logistic Regression (L2 Regularized)",
+    "k-Nearest Neighbors (k=5)"
+  ],
+  "feature_pipeline": {
+    "dimensions": 106,
+    "feature_groups": {
+      "hsv_color_histogram": 48,
+      "color_moments": 18,
+      "glcm_texture": 24,
+      "lbp_texture": 8,
+      "hu_moments": 7,
+      "disease_severity_ratio": 1
+    },
+    "preprocessing": [
+      "Image resize to 256x256",
+      "Gaussian blur filter (5x5 kernel)",
+      "Lab color space KMeans (k=3) segmentation",
+      "StandardScaler normalization",
+      "PCA (retaining 95% cumulative explained variance)"
+    ]
+  },
+  "dataset": {
+    "total_classes": 21,
+    "crops": ["Apple", "Corn (Maize)", "Potato", "Tomato"],
+    "classes": [
+      "Apple___Apple_scab",
+      "Apple___Black_rot",
+      "Apple___Cedar_apple_rust",
+      "Apple___healthy",
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "Corn_(maize)___Common_rust_",
+      "Corn_(maize)___Northern_Leaf_Blight",
+      "Corn_(maize)___healthy",
+      "Potato___Early_blight",
+      "Potato___Late_blight",
+      "Potato___healthy",
+      "Tomato___Bacterial_spot",
+      "Tomato___Early_blight",
+      "Tomato___Late_blight",
+      "Tomato___Leaf_Mold",
+      "Tomato___Septoria_leaf_spot",
+      "Tomato___Spider_mites Two-spotted_spider_mite",
+      "Tomato___Target_Spot",
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "Tomato___Tomato_mosaic_virus",
+      "Tomato___healthy"
+    ]
+  },
+  "fertilizer_model": {
+    "type": "Random Forest Classifier",
+    "features": ["Temparature", "Humidity", "Moisture", "Soil_Type", "Crop_Type", "Nitrogen", "Potassium", "Phosphorous"],
+    "target": "Fertilizer_Name"
+  },
+  "random_seed": 42
+}
