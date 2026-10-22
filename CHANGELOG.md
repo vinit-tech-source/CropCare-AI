@@ -19,3 +19,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Project documentation stubs (README, CONTRIBUTING, CHANGELOG, etc.)
 - Pre-commit hooks configuration
 - Data download instructions (`scripts/download_data.md`)
+- Split manifest, EDA notebook, and class balance analysis (Phase 1)
+- Image preprocessing and Gaussian filtering (`src/preprocessing.py`) (Phase 2)
+- KMeans leaf and disease lesion segmentation (`src/segmentation.py`) (Phase 2)
+- 106D handcrafted feature extraction combining HSV histograms/moments, GLCM, LBP, Hu moments, and lesion severity (`src/features.py`) (Phase 2)
+- Comprehensive test suite for preprocessing, segmentation, and feature extraction reaching 86% core coverage (Phase 2)

@@ -1,6 +1,6 @@
 # Disease-to-Fertilizer & Nutrient Management Guide
 
-> **Authoritative agronomic reference linking plant disease status to fertilizer selection, nutrient adjustments, and organic soil amendments for Indian agriculture.**  
+> **Authoritative agronomic reference linking plant disease status to fertilizer selection, nutrient adjustments, and organic soil amendments for Indian agriculture.**
 > *Sourced from ICAR, TNAU Agritech Portal, PAU Package of Practices, and CPRI Shimla.*
 
 ---

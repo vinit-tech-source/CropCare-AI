@@ -4,7 +4,12 @@ CropCare AI — Shared test fixtures.
 
 from __future__ import annotations
 
+import os
 from pathlib import Path
+
+# Silence loky CPU detection warning on Windows
+if "LOKY_MAX_CPU_COUNT" not in os.environ:
+    os.environ["LOKY_MAX_CPU_COUNT"] = str(os.cpu_count() or 4)
 
 import numpy as np
 import pytest
@@ -35,9 +40,9 @@ def sample_gray_image() -> np.ndarray:
 
 @pytest.fixture()
 def sample_feature_vector() -> np.ndarray:
-    """Return a synthetic feature vector (~105 dimensions)."""
+    """Return a synthetic feature vector (~105 dimensions, exactly 106)."""
     rng = np.random.RandomState(42)
-    return rng.rand(105)
+    return rng.rand(106)
 
 
 @pytest.fixture()
