@@ -1,0 +1,19 @@
+{
+  "model_name": "random_forest",
+  "cv_folds": 4,
+  "cv_accuracy_mean": 0.4047619047619047,
+  "cv_accuracy_std": 0.05323971374999499,
+  "cv_f1_macro_mean": 0.33333333333333337,
+  "cv_f1_macro_std": 0.07360014678964842,
+  "cv_precision_macro_mean": 0.30158730158730157,
+  "cv_precision_macro_std": 0.08285957546754408,
+  "cv_recall_macro_mean": 0.4047619047619047,
+  "cv_recall_macro_std": 0.05323971374999499,
+  "train_accuracy_mean": 1.0,
+  "train_accuracy_std": 0.0,
+  "roc_auc_macro": 1.0,
+  "full_data_accuracy": 1.0,
+  "full_data_f1_macro": 1.0,
+  "full_data_precision_macro": 1.0,
+  "full_data_recall_macro": 1.0
+}

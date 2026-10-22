@@ -1,0 +1,19 @@
+{
+  "model_name": "svm",
+  "cv_folds": 4,
+  "cv_accuracy_mean": 0.4642857142857143,
+  "cv_accuracy_std": 0.061858957413174216,
+  "cv_f1_macro_mean": 0.39761904761904754,
+  "cv_f1_macro_std": 0.065026110615109,
+  "cv_precision_macro_mean": 0.37003968253968256,
+  "cv_precision_macro_std": 0.0694940299162707,
+  "cv_recall_macro_mean": 0.4642857142857143,
+  "cv_recall_macro_std": 0.061858957413174216,
+  "train_accuracy_mean": 1.0,
+  "train_accuracy_std": 0.0,
+  "roc_auc_macro": 0.9888392857142857,
+  "full_data_accuracy": 1.0,
+  "full_data_f1_macro": 1.0,
+  "full_data_precision_macro": 1.0,
+  "full_data_recall_macro": 1.0
+}

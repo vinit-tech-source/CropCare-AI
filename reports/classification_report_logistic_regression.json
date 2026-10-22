@@ -1,0 +1,33 @@
+{
+  "Apple___Apple_scab": {
+    "precision": 0.3888888888888889,
+    "recall": 0.35,
+    "f1-score": 0.3684210526315789,
+    "support": 20.0
+  },
+  "Potato___Early_blight": {
+    "precision": 0.5,
+    "recall": 0.55,
+    "f1-score": 0.5238095238095238,
+    "support": 20.0
+  },
+  "Tomato___healthy": {
+    "precision": 0.55,
+    "recall": 0.55,
+    "f1-score": 0.55,
+    "support": 20.0
+  },
+  "accuracy": 0.48333333333333334,
+  "macro avg": {
+    "precision": 0.47962962962962963,
+    "recall": 0.4833333333333334,
+    "f1-score": 0.4807435254803676,
+    "support": 60.0
+  },
+  "weighted avg": {
+    "precision": 0.47962962962962963,
+    "recall": 0.48333333333333334,
+    "f1-score": 0.48074352548036764,
+    "support": 60.0
+  }
+}

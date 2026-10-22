@@ -1,0 +1,19 @@
+{
+  "model_name": "knn",
+  "cv_folds": 10,
+  "cv_accuracy_mean": 0.2833333333333333,
+  "cv_accuracy_std": 0.1301708279317776,
+  "cv_f1_macro_mean": 0.22714285714285715,
+  "cv_f1_macro_std": 0.11478605203814796,
+  "cv_precision_macro_mean": 0.21777777777777776,
+  "cv_precision_macro_std": 0.14154788048266848,
+  "cv_recall_macro_mean": 0.2833333333333333,
+  "cv_recall_macro_std": 0.1301708279317776,
+  "train_accuracy_mean": 0.49074074074074076,
+  "train_accuracy_std": 0.027777777777777783,
+  "roc_auc_macro": 0.7514583333333333,
+  "full_data_accuracy": 0.4666666666666667,
+  "full_data_f1_macro": 0.40496148322235276,
+  "full_data_precision_macro": 0.46013071895424834,
+  "full_data_recall_macro": 0.46666666666666673
+}

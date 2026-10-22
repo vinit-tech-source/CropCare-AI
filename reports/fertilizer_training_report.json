@@ -1,0 +1,57 @@
+{
+  "model_type": "random_forest",
+  "cv_folds": 2,
+  "cv_accuracy_scores": [
+    1.0,
+    1.0
+  ],
+  "cv_accuracy_mean": 1.0,
+  "cv_accuracy_std": 0.0,
+  "train_accuracy": 1.0,
+  "classes": [
+    "14-35-14",
+    "28-28",
+    "DAP",
+    "Urea"
+  ],
+  "classification_report": {
+    "14-35-14": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    },
+    "28-28": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    },
+    "DAP": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 2.0
+    },
+    "Urea": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 4.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 10.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 10.0
+    }
+  },
+  "timestamp": "20261022_144028"
+}
