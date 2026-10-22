@@ -36,10 +36,11 @@
 - [Project Structure](#-project-structure)
 - [Methodology](#-methodology)
 - [Results & Analysis](#-results--analysis)
+- [Project Report](#-project-report)
 - [Limitations](#-limitations)
 - [Future Scope](#-future-scope)
 - [References](#-references)
-- [Author](#-author)
+- [Project Team & Guide](#-project-team--guide)
 - [Acknowledgements](#-acknowledgements)
 
 ---
@@ -75,40 +76,42 @@ python -m src.cli predict \
 
 ## 📊 Key Results
 
-<!-- TODO: Auto-populate from reports/model_comparison.csv after Phase 4 -->
+| Model | CV Accuracy (mean ± std) | Full / Test Accuracy | Macro F1 |
+|:---|:---:|:---:|:---:|
+| **SVM (RBF Kernel)** | **46.43% ± 6.19%** | **100.0%** | **0.398** |
+| **Logistic Regression** | 41.67% ± 13.63% | 88.10% | 0.329 |
+| **k-Nearest Neighbors (KNN)** | 41.67% ± 10.85% | 64.29% | 0.361 |
+| **Random Forest** | 40.48% ± 5.32% | 100.0% | 0.333 |
 
-| Model | CV Accuracy (mean ± std) | Test Accuracy | Macro F1 |
-|-------|--------------------------|---------------|----------|
-| SVM   | —                        | —             | —        |
-| KNN   | —                        | —             | —        |
-| LR    | —                        | —             | —        |
-| RF    | —                        | —             | —        |
+*Evaluated using Stratified K-Fold cross-validation across 21 crop–disease classes (random baseline is 1/21 = 4.76%). The secondary tabular fertilizer recommendation model achieves **95.0% CV accuracy**.*
 
 ---
 
 ## ✨ Features
 
 - 🔬 **Disease Detection** — 21 classes across Apple, Corn, Potato, Tomato
-- 🧪 **KMeans Segmentation** — Isolates diseased regions; computes severity %
-- 📐 **105-D Feature Vector** — Color (HSV), Texture (GLCM + LBP), Shape (Hu moments)
-- 🤖 **4 ML Models** — SVM, KNN, Logistic Regression, Random Forest
-- 📊 **Rigorous Evaluation** — Stratified K-Fold CV, confusion matrix, ROC-AUC
-- 🌱 **Fertilizer Recommendation** — ML model + disease-aware rule layer
-- 📄 **PDF Reports** — One-page diagnostic report per prediction
-- 💻 **CLI Interface** — Rich terminal output with colors and tables
+- 🧪 **KMeans Segmentation** — Isolates diseased regions in CIELAB space; computes severity %
+- 📐 **106-D Feature Vector** — Color (HSV histograms 48D + Moments 18D), Texture (GLCM 24D + LBP 8D), Shape (Hu moments 7D), Severity % (1D)
+- 🤖 **4 ML Models** — SVM (RBF kernel), KNN, Logistic Regression, Random Forest
+- 📊 **Rigorous Evaluation** — Stratified K-Fold CV, confusion matrices, One-vs-Rest ROC-AUC
+- 🌱 **Fertilizer Recommendation** — Tabular ML model + disease-aware ICAR/FAO agronomic rules
+- 📄 **Academic Report** — Complete B.Tech Mini Project Report available in PDF and DOCX
+- 💻 **CLI Interface** — Rich terminal output with interactive tables and segmentation overlays
 
 ---
 
 ## 🏗️ Architecture
 
-<!-- TODO: Add Mermaid diagram after Phase 8 -->
+<p align="center">
+  <img src="reports/figures/system_architecture_diagram.png" alt="CropCare AI Architecture" width="850">
+</p>
 
 ```
-Leaf Image → Preprocessing → KMeans Segmentation → Feature Extraction
-    → StandardScaler → PCA → Classifier → Disease + Confidence
+Leaf Image → Preprocessing → KMeans Segmentation (Lab a*b*) → 106-D Feature Extraction
+    → StandardScaler → PCA (95% Var) → Classifier → Disease Diagnosis + Confidence
 
-Soil/Climate Data → Label Encoding → Fertilizer Model → Fertilizer Name
-    → Rule Layer (disease adjustments) → Final Recommendation
+Soil / Climate Data → ColumnTransformer → Random Forest → Base Fertilizer
+    → Agronomic Rule Layer (Pathogen Adjustments + IPM) → Complete Advisory
 ```
 
 ---
@@ -216,28 +219,51 @@ CropCare-AI/
 
 ## 📈 Results & Analysis
 
-<!-- TODO: Add confusion matrix image and analysis after Phase 4 -->
+### 1. Multi-Model Performance Comparison
+<p align="center">
+  <img src="reports/figures/model_comparison.png" alt="Model Comparison" width="700">
+</p>
+
+### 2. Confusion Matrix & ROC Curves (SVM Classifier)
+<p align="center">
+  <img src="reports/figures/confusion_matrix_svm.png" alt="SVM Confusion Matrix" width="440">
+  <img src="reports/figures/roc_curves_svm.png" alt="SVM ROC Curves" width="440">
+</p>
+
+### 3. Visual Leaf Segmentation Overlay
+<p align="center">
+  <img src="outputs/overlays/tomato_early_blight_segmented.png" alt="Tomato Early Blight Overlay" width="380">
+  <br>
+  <em>CIELAB K-Means (k=3) segmentation isolating diseased necrotic lesion tissue (red overlay).</em>
+</p>
+
+---
+
+## 📑 Project Report
+
+The complete academic B.Tech Machine Learning project report has been compiled and is available in both formats:
+- 📑 **[Download PDF Report](CropCare_AI_ML_Mini_Project_Report.pdf)**
+- 📄 **[Download Word DOCX Report](CropCare_AI_ML_Mini_Project_Report.docx)**
 
 ---
 
 ## ⚠️ Limitations
 
-- Trained on lab-style PlantVillage images; field photos may have lower accuracy
-- Small subset used (300 images/class) for computational speed
-- Classical ML features may not capture complex visual patterns as well as CNNs
-- Fertilizer recommendations are advisory and not a substitute for soil testing
+- Trained on lab-style PlantVillage images; field photos with cluttered backgrounds may have lower accuracy
+- Small subset used for computational speed and rapid benchmarking
+- Classical ML features may not capture complex multi-infection patterns as well as deep CNNs
+- Fertilizer recommendations are advisory and not a substitute for comprehensive chemical soil lab testing
 - Limited to 4 crops and 21 disease classes
 
 ---
 
 ## 🔮 Future Scope
 
-- Deep learning models (CNN, transfer learning) for comparison
-- Mobile application for real-time field use
-- Larger, more diverse dataset including field images
-- Multi-language support for regional farmers
-- Integration with weather APIs for location-based advice
-- IoT sensor integration for automated soil monitoring
+- Deep learning models (CNN, MobileNet, EfficientNet) for cross-paradigm benchmark comparison
+- Offline-first mobile application (Flutter / React Native) for field-side camera inference
+- Larger, more diverse dataset including open-field leaf images across 50+ crop varieties
+- Multi-language support (Hindi, Marathi, Telugu, Tamil) for regional farmers
+- IoT LoRaWAN soil NPK and moisture sensor probe telemetry for live automatic fertility updates
 
 ---
 
@@ -253,17 +279,17 @@ CropCare-AI/
 
 ---
 
-## 👤 Author
+## 👤 Project Team & Guide
 
-<!-- TODO: Replace with your details -->
-
-| Field | Value |
-|-------|-------|
-| **Name** | [YOUR NAME] |
-| **College** | [YOUR COLLEGE] |
-| **Guide** | [YOUR GUIDE] |
-| **Year** | [ACADEMIC YEAR] |
-| **GitHub** | [@vinit-tech-source](https://github.com/vinit-tech-source) |
+| Field | Value / Details |
+|:---|:---|
+| **Student Team** | • **Vinit Shinde** (Roll No: `CS3337`, PRN: `RBT24CS178`)<br>• **Harsh Vyavhare** (Roll No: `CS3332`, PRN: `RBT24CS173`)<br>• **Sarthak Shinde** (Roll No: `CS3336`, PRN: `RBT24CS177`) |
+| **College** | **JSPM's Rajarshi Shahu College of Engineering (RSCOE)**, Tathwade, Pune - 411033<br>*(An Autonomous Institute Affiliated to Savitribai Phule Pune University, Pune)* |
+| **Department** | Department of Computer Engineering (TY B.Tech, Division: C, Batch: C-2) |
+| **Subject Teacher / Guide** | **Prof. Pradnya A. Vikhar** |
+| **Course** | Machine Learning |
+| **Academic Year** | 2026–27 (Semester-V) |
+| **GitHub Repository** | [@vinit-tech-source/CropCare-AI](https://github.com/vinit-tech-source/CropCare-AI) |
 
 ---
 

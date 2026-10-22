@@ -8,9 +8,15 @@ url: "https://github.com/vinit-tech-source/CropCare-AI"
 repository-code: "https://github.com/vinit-tech-source/CropCare-AI"
 license: MIT
 authors:
-  - family-names: "[YOUR LAST NAME]"
-    given-names: "[YOUR FIRST NAME]"
-    affiliation: "[YOUR COLLEGE]"
+  - family-names: "Shinde"
+    given-names: "Vinit"
+    affiliation: "JSPM's Rajarshi Shahu College of Engineering, Pune"
+  - family-names: "Vyavhare"
+    given-names: "Harsh"
+    affiliation: "JSPM's Rajarshi Shahu College of Engineering, Pune"
+  - family-names: "Shinde"
+    given-names: "Sarthak"
+    affiliation: "JSPM's Rajarshi Shahu College of Engineering, Pune"
 keywords:
   - machine-learning
   - plant-disease-detection
